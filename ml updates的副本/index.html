@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sharing Album: Memories Through Poses</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/p5.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Long+Cang&family=Nanum+Pen+Script&family=Nothing+You+Could+Do&family=Reenie+Beanie&family=Rock+3D&family=Special+Elite&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <h1 id="heading">Album</h1>
+
+    <script type="text/javascript">
+      alert("Welcome to my album! Feel free to make some poses to unlock my memories. Please make sure your entire upper body is in the camera. Enjoy💆‍♀️🌼!");
+    </script>
+
+    <div class="images">
+      <img src="images/tiya.PNG" alt="" id="in_tiya">
+      <img src="images/amusement.PNG" alt="" id="in_amusement">
+      <img src="images/drama.PNG" alt="" id="in_drama">
+      <img src="images/jane.PNG" alt="" id="in_jane">
+      <img src="images/julie.PNG" alt="" id="in_julie">
+      <img src="images/kicking.PNG" alt="" id="in_kicking">
+      <img src="images/none.PNG" alt="" id="in_none">
+    </div>
+
+    <div class="results">
+      <div id="result_tiya">
+        <img src="images/tiya.jpeg" alt="">
+        <p>Since I ate Japanese food with tiya once, all Japanese food has been branded with her name. Miss her so much.</p>
+      </div>
+      <div id="result_amusement">
+        <img src="images/amusement.jpeg" alt="">
+        <p>My childhood favorite amusement park. From the entrance you have to go through a castle to reach the park. A mysterious abandoned railway track lying beneath the castle.</p>
+      </div>
+      <div id="result_drama">
+        <img src="images/drama.jpeg" alt="">
+        <p>Saw four exhibitions in one day. Three single people went to see the exhibition called "I DO".</p>
+      </div>
+      <div id="result_jane">
+        <img src="images/jane.jpeg" alt="">
+        <p>Went to get our ears pierced together for that day. And together we saw an exhibition, took selfies, ate burgers, rode bikes, and stargazed.</p>
+      </div>
+      <div id="result_julie">
+        <img src="images/julie.jpeg" alt="">
+        <p>When I told my friend I needed some exaggerated movements photos for my project,
+            <br>
+            my friend:
+            </p>
+      </div>
+      <div id="result_kicking">
+        <img src="images/kicking.jpeg" alt="">
+        <p>An exhibition that required walking through other exhibitions to get to it first.
+
+          So it took seven or eight turns around the building to find it.</p>
+      </div>
+
+    </div>
+
+    <div class="follow" id="follow">
+    </div>
+
+  <div class="image-wrapper">
+    <div class="media" id="media_1">
+      <div class="overlay"></div>
+      <img class="image-look" src="images/tiya.jpeg" alt="" id="image1">
+      <div class="image-details" id="error1">
+        <br>
+      </div>
+    </div>
+
+    <div class="media" id="media_2">
+      <div class="overlay"></div>
+      <img class="image-look" id="julie" src="images/julie.jpeg" alt="">
+      <div class="image-details" id="error2">
+        <br>
+      </div>
+    </div>
+
+    <div class="media" id="media_3">
+      <div class="overlay"></div>
+      <img class="image-look" id="amusement" src="images/amusement.jpeg" alt="">
+      <div class="image-details" id="error3">
+        <br>
+      </div>
+    </div>
+
+    <div class="media" id="four">
+      <div class="overlay"></div>
+      <img class="image-look" id="drama" src="images/drama.jpeg" alt="">
+      <div class="image-details" id="error4">
+        <br>
+      </div>
+    </div>
+
+    <div class="media" id="five">
+      <div class="overlay"></div>
+      <img class="image-look" src="images/jane.jpeg" alt="" id="image5">
+      <div class="image-details" id="error5">
+        <br>
+      </div>
+    </div>
+
+    <div class="media" id="six">
+      <div class="overlay"></div>
+      <img class="image-look" src="images/kicking.jpeg" alt="" id="image6">
+      <div class="image-details" id="error6">
+        <br>
+      </div>
+    </div>
+  </div>
+
+  <div id="canvas">
+  </div>
+
+    <script src="js/script.js">
+    </script>
+
+  </body>
+</html>

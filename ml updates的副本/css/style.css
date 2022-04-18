@@ -1,0 +1,231 @@
+body {
+  font-family: 'Nothing You Could Do', cursive;
+  background-color: #212121;
+}
+
+#heading {
+  color: AntiqueWhite;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Nothing You Could Do', cursive;
+}
+
+#canvas {
+  display:inline;
+  text-align: center;
+  margin: 15px;
+  position:fixed;
+  left: 64%;
+  top:-8%;
+  transform: translateX(-50%);
+  transform:scale(0.4);
+  opacity:30%;
+}
+
+.image-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin: 16px;
+  overflow: hidden;
+  position: relative;
+  top:0px;
+  left:-150px;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 350px 350px;
+  column-gap: 30px;
+}
+
+.media {
+  display:block;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 50px;
+  background-color: AntiqueWhite;
+
+  border-color: white;
+  border-width: 10px;
+  border-style:ridge;
+
+}
+
+#image1{
+  filter: blur(8px);
+}
+#julie{
+  filter: blur(8px);
+}
+#amusement{
+  filter: blur(8px);
+}
+#drama{
+  filter: blur(8px);
+}
+#image5{
+  filter: blur(8px);
+}
+#image6{
+  filter: blur(8px);
+}
+
+.media:hover {
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  z-index: -1;
+  margin: auto;
+  transform: scale(1);
+  transition: all ease-in-out 0.5s;
+}
+
+#amusement{
+  height:225px;
+  width:100%;
+  object-fit: cover;
+}
+#drama{
+  height:225px;
+  width:100%;
+  object-fit: cover;
+}
+#julie{
+  height:225px;
+  width:100%;
+  object-fit: cover;
+}
+
+/* .media:hover img {
+  transform: scale(1.1);
+  filter: blur(2px);
+} */
+
+.image-details {
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  z-index: 4;
+  margin-top: 10px;
+  font-family: 'Special Elite', cursive;
+  color: black;
+  line-height: 30px;
+}
+
+.images{
+  display:none;
+  width:30%;
+  height:30%;
+  position:absolute;
+  left:auto;
+  top:25%;
+  text-align: center;
+  font-size: 50px;
+  color: AntiqueWhite;
+}
+
+.results{
+  text-align:left;
+  font-size: 25px;
+  color:white;
+  font-family: 'Nothing You Could Do', cursive;
+  color: AntiqueWhite;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#result_tiya{
+  display:none;
+  display:inline;
+  width:18%;
+  height:18%;
+  position:absolute;
+  right:3.5%;
+  top:17%;
+  opacity:0%;
+}
+#result_amusement{
+  display:none;
+  display:inline;
+  width:18%;
+  height:18%;
+  position:absolute;
+  right:3.5%;
+  top:17%;
+  opacity:0%;
+}
+#result_julie{
+  display:none;
+  display:inline;
+  width:18%;
+  height:18%;
+  position:absolute;
+  right:3.5%;
+  top:17%;
+  opacity:0%;
+}
+#result_jane{
+  display:none;
+  display:inline;
+  width:18%;
+  height:18%;
+  position:absolute;
+  right:3.5%;
+  top:17%;
+  opacity:0%;
+}
+#result_kicking{
+  display:none;
+  display:inline;
+  width:18%;
+  height:18%;
+  position:absolute;
+  right:3.5%;
+  top:17%;
+  opacity:0%;
+}
+#result_drama{
+  display:none;
+  display:inline;
+  width:18%;
+  height:18%;
+  position:absolute;
+  right:3.5%;
+  top:17%;
+  opacity:0%;
+}
+
+.follow{
+  display:inline;
+  width:30%;
+  height:30%;
+  position:absolute;
+  left:2%;
+  top:45%;
+  text-align: left;
+  font-size: 50px;
+  color: AntiqueWhite;
+  font-family: 'Special Elite', cursive;
+  font-size: 23px;
+}
+
+#in_tiya{
+  display:none;
+}
+#in_amusement{
+  display:none;
+}
+#in_julie{
+  display:none;
+}
+#in_jane{
+  display:none;
+}
+#in_kicking{
+  display:none;
+}
+#in_drama{
+  display:none;
+}
