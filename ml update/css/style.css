@@ -7,7 +7,9 @@ body {
   color: AntiqueWhite;
   text-align: center;
   font-size: 50px;
-  font-family: 'Nothing You Could Do', cursive;
+  font-family: 'Bungee Hairline', cursive;
+  letter-spacing: -3px;
+  word-spacing: 20px;
 }
 
 #canvas {
@@ -109,7 +111,9 @@ img {
   font-size: 16px;
   z-index: 4;
   margin-top: 10px;
-  font-family: 'Special Elite', cursive;
+  font-family: 'Orbitron', sans-serif;
+  /* font-family: 'Iceberg', cursive; */
+  /* font-family: 'Uncial Antiqua', cursive; */
   color: black;
   line-height: 30px;
 }
@@ -128,9 +132,11 @@ img {
 
 .results{
   text-align:left;
-  font-size: 25px;
+  font-size: 20px;
   color:white;
-  font-family: 'Nothing You Could Do', cursive;
+  font-family: 'Bungee Hairline', cursive;
+  letter-spacing: 0px;
+  word-spacing: 5px;
   color: AntiqueWhite;
   flex-wrap: wrap;
   justify-content: center;
@@ -228,4 +234,19 @@ img {
 }
 #in_drama{
   display:none;
+}
+
+#waterMark{
+  color: AntiqueWhite;
+  text-align: center;
+  font-size: 13px;
+  /* font-family:cursive; */
+  font-family: 'Bungee Hairline', cursive;
+  letter-spacing: -2px;
+  word-spacing: 10px;
+  width:100%;
+
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
 }

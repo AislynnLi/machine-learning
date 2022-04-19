@@ -44,6 +44,13 @@ let score4;
 let score5;
 let score6;
 
+let succeed0=0;
+let succeed1=0;
+let succeed2=0;
+let succeed3=0;
+let succeed4=0;
+let succeed5=0;
+
 
 let grey = 0;
 let scores = [];
@@ -279,7 +286,13 @@ function draw() {
         result_drama.style.opacity = "0%";
         result_kicking.style.opacity = "0%";
         result_julie.style.opacity = "0%";
-      } else {
+        succeed4 ++;
+      } else if (succeed4>15){
+        succeed4 = 0;
+        result_tiya.style.opacity = "0%";
+        result_tiya.style.transition = "opacity 1.5s ease-in-out 10s";
+      } else{
+        succeed4 = 0;
         result_tiya.style.opacity = "0%";
         result_tiya.style.transition = "opacity 1.5s ease-in-out";
       }
@@ -305,7 +318,13 @@ function draw() {
         result_drama.style.opacity = "0%";
         result_tiya.style.opacity = "0%";
         result_julie.style.opacity = "0%";
-      } else {
+        succeed0 ++;
+      } else if (succeed0>15){
+        succeed0 = 0;
+        result_kicking.style.opacity = "0%";
+        result_kicking.style.transition = "opacity 1.5s ease-in-out 15s";
+      } else{
+        succeed0 = 0;
         result_kicking.style.opacity = "0%";
         result_kicking.style.transition = "opacity 1.5s ease-in-out";
       }
@@ -329,7 +348,13 @@ function draw() {
         result_tiya.style.opacity = "0%";
         result_kicking.style.opacity = "0%";
         result_julie.style.opacity = "0%";
-      } else {
+        succeed1 ++;
+      } else if (succeed1>15){
+        succeed1 = 0;
+        result_drama.style.opacity = "0%";
+        result_drama.style.transition = "opacity 1.5s ease-in-out 15s";
+      } else{
+        succeed1 = 0;
         result_drama.style.opacity = "0%";
         result_drama.style.transition = "opacity 1.5s ease-in-out";
       }
@@ -353,7 +378,13 @@ function draw() {
          result_drama.style.opacity = "0%";
          result_kicking.style.opacity = "0%";
          result_tiya.style.opacity = "0%";
-       } else {
+         succeed2 ++;
+       } else if (succeed2>15){
+         succeed2 = 0;
+         result_julie.style.opacity = "0%";
+         result_julie.style.transition = "opacity 1.5s ease-in-out 15s";
+       } else{
+         succeed2 = 0;
          result_julie.style.opacity = "0%";
          result_julie.style.transition = "opacity 1.5s ease-in-out";
        }
@@ -361,7 +392,7 @@ function draw() {
 
       }
       if(i == 3){
-        score = map(error,350,600,100,0);
+        score = map(error,400,600,100,0);
         score = constrain(score, 0,100);
         score = floor(score);
         score4 = score;
@@ -378,10 +409,17 @@ function draw() {
         result_drama.style.opacity = "0%";
         result_kicking.style.opacity = "0%";
         result_julie.style.opacity = "0%";
-      } else {
+        succeed3 ++;
+      } else if (succeed3>15){
+        succeed3 = 0;
+        result_jane.style.opacity = "0%";
+        result_jane.style.transition = "opacity 1.5s ease-in-out 15s";
+      } else{
+        succeed3 = 0;
         result_jane.style.opacity = "0%";
         result_jane.style.transition = "opacity 1.5s ease-in-out";
       }
+
       }
 
       if(i == 5){
@@ -402,10 +440,18 @@ function draw() {
         result_drama.style.opacity = "0%";
         result_kicking.style.opacity = "0%";
         result_julie.style.opacity = "0%";
-      } else {
+        succeed5 ++;
+      } else if (succeed5>15){
+        succeed5 = 0;
+        result_amusement.style.opacity = "0%";
+        result_amusement.style.transition = "opacity 1.5s ease-in-out 15s";
+      } else{
+        succeed5 = 0;
         result_amusement.style.opacity = "0%";
         result_amusement.style.transition = "opacity 1.5s ease-in-out";
       }
+
+      console.log(succeed5)
       }
 
     }
