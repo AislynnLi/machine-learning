@@ -397,7 +397,7 @@ function draw() {
         score = floor(score);
         score4 = score;
         let blur_score = map(score,0,100,8,0);
-        document.getElementById("error5").innerHTML = "“Shooting(Basketball)”" + "<br>" + score + " %";
+        document.getElementById("error5").innerHTML = "“Shooting (Basketball)”" + "<br>" + score + " %";
         image5.style.filter = "blur("+blur_score+"px)";
 
 
