@@ -1,0 +1,6 @@
+{
+    "description": "",
+    "model": "model/SmoothedGenerator_8000_tfjs/model.json",
+    "modelSize": 64,
+    "modelLatentDim": 128
+}

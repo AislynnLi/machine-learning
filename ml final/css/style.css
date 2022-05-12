@@ -1,0 +1,145 @@
+body {
+  background-color: black;
+}
+
+#canvas {
+  display:inline;
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+
+.media {
+  display:inline;
+  position:fixed;
+
+  width:140px;
+  height:140px;
+  border:1px solid black;
+  background:mintcream;
+
+  border-radius: 10%;
+  background: radial-gradient(blue, purple);
+  /* box-shadow: 0px 0px 50px Fuchsia; */
+  border-color: blue;
+  border-width: 1px;
+}
+
+#leftup {
+  position:absolute;
+  left:12%;
+  top:20%;
+}
+#rightup {
+  position:absolute;
+  right:12%;
+  top:20%;
+
+  box-shadow: 0px 0px 30px Magenta;
+  background: radial-gradient(yellow, purple);
+  border-color: purple;
+}
+#leftdown {
+  position:absolute;
+  left:12%;
+  bottom:5%;
+}
+#rightdown {
+  position:absolute;
+  right:12%;
+  bottom:5%;
+}
+
+/* #leftdown_inside{
+  background:yellow;
+  border-radius: 50%;
+  width:110px;
+  height:110px;
+
+  position:fixed;
+  left:14%;
+  bottom:18.5%;
+  opacity:60%;
+  box-shadow: 0px 0px 30px yellow;
+} */
+
+div:hover #leftdown {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+  background:yellow;
+}
+
+a hover .media{
+  opacity: 0%;
+}
+
+h1 {
+  color: Magenta;
+  text-align: center;
+  font-size: 70px;
+  font-family: 'Codystar', cursive;
+  font-weight: 300;
+}
+
+.button {
+  color:white;
+}
+
+#word{
+  color:white;
+  position: absolute;
+  right:9%;
+  top:2.5%;
+  font-size: 30px;
+}
+
+
+.switch {
+  position: absolute;
+  right:4%;
+  top:3%;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: purple;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: yellow;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: blue;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
