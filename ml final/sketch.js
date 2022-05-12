@@ -97,7 +97,7 @@ function setup() {
     spotlights.push(new spotlight(width, height / 2));
   }
 
-  track_num = random(0.35, 0.4);
+  track_num = random(0.25, 0.35);
   pattern_num = 3;
 
   // create 2 arrays to hold random values for our latent vector
@@ -272,7 +272,7 @@ function draw() {
       button_rightdown.style.background = "radial-gradient(blue, purple)";
       button_rightdown.style.borderColor = "blue"
     }
-    if( dist(leftWrist_x,leftWrist_y,-25,520)<25){
+    if( dist(leftWrist_x,leftWrist_y,-30,525)<30){
       pattern_num = 2;
       button_leftdown.style.boxShadow = "0px 0px 30px Magenta";
       button_leftdown.style.background = "radial-gradient(yellow, purple)";
@@ -288,7 +288,7 @@ function draw() {
       button_rightdown.style.background = "radial-gradient(blue, purple)";
       button_rightdown.style.borderColor = "blue"
     }
-    if( dist(rightWrist_x,rightWrist_y,620,100)<40){
+    if( dist(rightWrist_x,rightWrist_y,630,100)<40){
       pattern_num = 3;
       button_rightup.style.boxShadow = "0px 0px 30px Magenta";
       button_rightup.style.background = "radial-gradient(yellow, purple)";
@@ -304,7 +304,7 @@ function draw() {
       button_rightdown.style.background = "radial-gradient(blue, purple)";
       button_rightdown.style.borderColor = "blue"
     }
-    if( dist(rightWrist_x,rightWrist_y,620,520)<30){
+    if( dist(rightWrist_x,rightWrist_y,640,525)<30){
       pattern_num = 4;
       button_rightdown.style.boxShadow = "0px 0px 30px Magenta";
       button_rightdown.style.background = "radial-gradient(yellow, purple)";
